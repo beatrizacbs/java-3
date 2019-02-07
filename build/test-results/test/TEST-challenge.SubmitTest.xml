@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="challenge.MainTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2019-02-06T17:50:56" hostname="DESKTOP-J9CC97G" time="3.068">
+<testsuite name="challenge.SubmitTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2019-02-07T22:51:02" hostname="DESKTOP-J9CC97G" time="4.362">
   <properties/>
-  <testcase name="q1" classname="challenge.MainTest" time="0.399"/>
-  <testcase name="q2" classname="challenge.MainTest" time="0.332"/>
-  <testcase name="q3" classname="challenge.MainTest" time="1.7"/>
-  <testcase name="q4" classname="challenge.MainTest" time="0.413"/>
-  <testcase name="q5" classname="challenge.MainTest" time="0.003">
-    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertNotNull(Assert.java:712)
-	at org.junit.Assert.assertNotNull(Assert.java:722)
-	at challenge.MainTest.q5(MainTest.java:40)
+  <testcase name="q1" classname="challenge.SubmitTest" time="0.499"/>
+  <testcase name="q2" classname="challenge.SubmitTest" time="0.435"/>
+  <testcase name="q3" classname="challenge.SubmitTest" time="2.024"/>
+  <testcase name="q4" classname="challenge.SubmitTest" time="0.392"/>
+  <testcase name="q5" classname="challenge.SubmitTest" time="0.625">
+    <failure message="java.lang.AssertionError: expected:&lt;[Barry Richardson, Essam El Hadary, Ã“scar PÃ©rez, Jimmy Walker, Danny Coyne, Chris Day, Joaquim Manuel Sampaio Silva, Kjetil WÃ¦hler, Timmy Simons, Benjamin Nivet]&gt; but was:&lt;[Barry Richardson, Barry Richardson, Essam El Hadary, Ã“scar PÃ©rez, Jimmy Walker, Danny Coyne, Chris Day, Joaquim Manuel Sampaio Silva, Kjetil WÃ¦hler, Timmy Simons]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;[Barry Richardson, Essam El Hadary, Ã“scar PÃ©rez, Jimmy Walker, Danny Coyne, Chris Day, Joaquim Manuel Sampaio Silva, Kjetil WÃ¦hler, Timmy Simons, Benjamin Nivet]&gt; but was:&lt;[Barry Richardson, Barry Richardson, Essam El Hadary, Ã“scar PÃ©rez, Jimmy Walker, Danny Coyne, Chris Day, Joaquim Manuel Sampaio Silva, Kjetil WÃ¦hler, Timmy Simons]&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at challenge.SubmitTest.q5(SubmitTest.java:82)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,7 +61,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="q6" classname="challenge.MainTest" time="0.218"/>
+  <testcase name="q6" classname="challenge.SubmitTest" time="0.385"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

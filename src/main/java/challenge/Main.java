@@ -1,6 +1,7 @@
 package challenge;
 
 import javafx.util.Pair;
+import parser.CsvParser;
 import sun.reflect.generics.tree.Tree;
 
 import java.awt.geom.PathIterator;
@@ -23,6 +24,7 @@ public class Main {
 
 	// Quantas nacionalidades (coluna `nationality`) diferentes existem no arquivo?
 	public int q1() {
+		CsvParser.getAllJogadores();
 		return lerLista(new ArrayList<String>(), nationalityIndex).size() - 1;
 	}
 
@@ -78,9 +80,16 @@ public class Main {
 
 	}
 
-	private List<String> getNomesJogadores(ArrayList<Pair<String, BigDecimal>> pairs) {
+	private List<String> getNomesJogadores(List<Pair<String, BigDecimal>> pairs) {
 
-		return null;
+		List<String> retorno = new ArrayList<>();
+		Iterator iterator = pairs.iterator();
+		Pair<String, BigDecimal> pair = pairs.get(0);
+		while (retorno.size() != 10){
+			retorno.add(pair.getKey());
+			pair = (Pair<String, BigDecimal>) iterator.next();
+		}
+		return retorno;
 
 	}
 

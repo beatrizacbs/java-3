@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49cec6e-0978-42bd-89a1-2cae06279d2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_opencsv_opencsv_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_text_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/bean/Jogador.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/challenge/SubmitTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/parser/CsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/java-3.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/java-3.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/java-3.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/java-3.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/challenge/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/challenge/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/challenge.MainTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/challenge.SubmitTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/challenge.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/challenge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-challenge.MainTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-challenge.SubmitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/challenge/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,15 +49,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,10 +76,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bean/Jogador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="578">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
                 <element signature="e#654#655#0" expanded="true" />
                 <element signature="e#687#688#0" expanded="true" />
                 <element signature="e#715#716#0" expanded="true" />
@@ -76,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="459">
               <caret line="27" selection-start-line="27" selection-end-line="28" />
             </state>
           </provider>
@@ -85,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -107,8 +143,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/Jogador.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/challenge/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/parser/CsvParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/Jogador.java" />
       </list>
     </option>
   </component>
@@ -124,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,6 +188,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-3" type="b2602c69:ProjectViewProjectNode" />
@@ -189,14 +237,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549502203540" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549582612901" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -223,14 +269,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.q5">
+  <component name="RunManager" selected="JUnit.MainTest.q1">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.q2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainTest.q1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-3.test" />
       <extension name="coverage">
         <pattern>
@@ -240,7 +286,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="challenge" />
       <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
-      <option name="METHOD_NAME" value="q2" />
+      <option name="METHOD_NAME" value="q1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -332,11 +378,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.q1" />
         <item itemvalue="JUnit.MainTest.q5" />
         <item itemvalue="JUnit.MainTest.q4" />
         <item itemvalue="JUnit.MainTest.q6" />
         <item itemvalue="JUnit.MainTest.q3" />
-        <item itemvalue="JUnit.MainTest.q2" />
       </list>
     </recent_temporary>
   </component>
@@ -357,29 +403,12 @@
       <workItem from="1549329485875" duration="1930000" />
       <workItem from="1549415400384" duration="2786000" />
       <workItem from="1549474847837" duration="1959000" />
-      <workItem from="1549494637824" duration="6197000" />
+      <workItem from="1549494637824" duration="6400000" />
+      <workItem from="1549579350827" duration="3823000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_q4 - 2019.02.06 at 14h 49m 47s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.06 at 14h 50m 05s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 20m 41s.xml">
-      <configuration name="MainTest.q5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 04s.xml">
-      <configuration name="MainTest.q5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 14s.xml">
-      <configuration name="MainTest.q5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 43s.xml">
-      <configuration name="MainTest.q5" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_q5 - 2019.02.06 at 21h 22m 50s.xml">
       <configuration name="MainTest.q5" configurationId="JUnit" />
     </history-entry>
@@ -392,15 +421,33 @@
     <history-entry file="MainTest_q5 - 2019.02.06 at 22h 16m 43s.xml">
       <configuration name="MainTest.q5" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.07 at 19h 49m 50s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q1 - 2019.02.07 at 20h 29m 32s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q1 - 2019.02.07 at 20h 31m 22s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q1 - 2019.02.07 at 20h 32m 12s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q1 - 2019.02.07 at 20h 33m 30s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q1 - 2019.02.07 at 20h 36m 53s.xml">
+      <configuration name="MainTest.q1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27933000" />
+    <option name="totallyTimeSpent" value="31959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19213313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -408,14 +455,14 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32901135" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6482982" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.0923825" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5931929" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.048622366" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4311183" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.33549434" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.048622366" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -441,7 +488,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/challenge/Main.java</url>
-          <line>182</line>
+          <line>191</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -453,9 +500,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/challenge/Main.java</url>
-          <line>129</line>
+          <line>138</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -499,19 +552,54 @@
     <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.1/3651eee22f4df5a73f5a75e992f662be400d1ef9/opencsv-4.1-sources.jar!/com/opencsv/bean/CsvToBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="554" selection-start-line="554" selection-end-line="554" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/Jogador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="578">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
             <element signature="e#654#655#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
             <element signature="e#715#716#0" expanded="true" />
@@ -539,24 +627,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="188">
-          <caret line="27" selection-start-line="27" selection-end-line="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="156">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>

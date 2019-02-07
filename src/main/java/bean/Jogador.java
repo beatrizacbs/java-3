@@ -1,22 +1,39 @@
 package bean;
 
+import com.opencsv.bean.CsvBindByName;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Jogador {
 
+    @CsvBindByName
     private int ID;
-    private BigDecimal eurReleaseClause;
-    private LocalDate birthDate;
-    private String name;
+
+    @CsvBindByName
+    private String eur_release_clause;
+
+    @CsvBindByName
+    private String birth_date;
+
+    @CsvBindByName
+    private String full_name;
+
+    @CsvBindByName
     private String nationality;
+
+    @CsvBindByName
     private String club;
 
-    public Jogador(int ID, BigDecimal eurReleaseClause, LocalDate birthDate, String name, String nationality, String club) {
+    public Jogador(){
+
+    }
+
+    public Jogador(int ID, String eur_release_clause, String birth_date, String full_name, String nationality, String club) {
         this.ID = ID;
-        this.eurReleaseClause = eurReleaseClause;
-        this.birthDate = birthDate;
-        this.name = name;
+        this.eur_release_clause = eur_release_clause;
+        this.birth_date = birth_date;
+        this.full_name = full_name;
         this.nationality = nationality;
         this.club = club;
     }
@@ -29,28 +46,28 @@ public class Jogador {
         this.ID = ID;
     }
 
-    public BigDecimal getEurReleaseClause() {
-        return eurReleaseClause;
+    public String getEur_release_clause() {
+        return eur_release_clause;
     }
 
-    public void setEurReleaseClause(BigDecimal eurReleaseClause) {
-        this.eurReleaseClause = eurReleaseClause;
+    public void setEur_release_clause(String eur_release_clause) {
+        this.eur_release_clause = eur_release_clause;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public String getBirth_date() {
+        return birth_date;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setBirth_date(String birth_date) {
+        this.birth_date = birth_date;
     }
 
-    public String getName() {
-        return name;
+    public String getFull_name() {
+        return full_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFull_name(String full_name) {
+        this.full_name = full_name;
     }
 
     public String getNationality() {
