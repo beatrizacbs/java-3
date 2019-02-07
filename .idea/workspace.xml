@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e49cec6e-0978-42bd-89a1-2cae06279d2f" name="Default Changelist" comment="" />
+    <list default="true" id="e49cec6e-0978-42bd-89a1-2cae06279d2f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/challenge/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/challenge/Main.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,22 +27,48 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="423">
+              <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/Jogador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="234">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#654#655#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#996#997#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1189#1190#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1393#1394#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1523#1524#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,18 +76,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+            <state relative-caret-position="188">
+              <caret line="27" selection-start-line="27" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/Jogador.java" />
         <option value="$PROJECT_DIR$/src/main/java/challenge/Main.java" />
       </list>
     </option>
@@ -66,6 +118,7 @@
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -88,6 +141,21 @@
               <item name="java-3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-3" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="challenge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java-3" type="b2602c69:ProjectViewProjectNode" />
@@ -121,14 +189,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549418332845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549502203540" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -155,26 +223,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.q4">
+  <component name="RunManager" selected="JUnit.MainTest.q5">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.q1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-3.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="challenge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="challenge" />
-      <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
-      <option name="METHOD_NAME" value="q1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,6 +281,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest.q5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-3.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="challenge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="challenge" />
+      <option name="MAIN_CLASS_NAME" value="challenge.MainTest" />
+      <option name="METHOD_NAME" value="q5" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest.q6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-3.test" />
       <extension name="coverage">
@@ -264,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.q5" />
         <item itemvalue="JUnit.MainTest.q4" />
         <item itemvalue="JUnit.MainTest.q6" />
         <item itemvalue="JUnit.MainTest.q3" />
         <item itemvalue="JUnit.MainTest.q2" />
-        <item itemvalue="JUnit.MainTest.q1" />
       </list>
     </recent_temporary>
   </component>
@@ -288,50 +356,51 @@
       <workItem from="1549231798006" duration="1714000" />
       <workItem from="1549329485875" duration="1930000" />
       <workItem from="1549415400384" duration="2786000" />
-      <workItem from="1549474847837" duration="777000" />
+      <workItem from="1549474847837" duration="1959000" />
+      <workItem from="1549494637824" duration="6197000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_q4 - 2019.02.04 at 22h 47m 43s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 30m 26s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 36m 32s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 37m 51s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 48m 02s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 51m 06s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 52m 01s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q4 - 2019.02.05 at 22h 53m 44s.xml">
-      <configuration name="MainTest.q4" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_q4 - 2019.02.06 at 14h 49m 47s.xml">
       <configuration name="MainTest.q4" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MainTest_q4 - 2019.02.06 at 14h 50m 05s.xml">
       <configuration name="MainTest.q4" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 20m 41s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 04s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 14s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 21m 43s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 22m 50s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 21h 29m 23s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 22h 14m 21s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q5 - 2019.02.06 at 22h 16m 43s.xml">
+      <configuration name="MainTest.q5" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20554000" />
+    <option name="totallyTimeSpent" value="27933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19213313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -341,12 +410,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6482982" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.048622366" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.0923825" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.048622366" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.8654781" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4311183" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -372,7 +441,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/challenge/Main.java</url>
-          <line>135</line>
+          <line>182</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -384,7 +453,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/challenge/Main.java</url>
-          <line>82</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -427,34 +496,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="166">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/Jogador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/data.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="188">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-561" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="423">
+          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>

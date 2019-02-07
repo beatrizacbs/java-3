@@ -1,7 +1,9 @@
 package challenge;
 
+import javafx.util.Pair;
 import sun.reflect.generics.tree.Tree;
 
+import java.awt.geom.PathIterator;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.math.BigDecimal;
@@ -12,21 +14,27 @@ public class Main {
 
 	final String csvFile = "C:\\Users\\Marnie\\codenation\\java-3\\src\\main\\resources\\data.csv";
 	final String comma = ",";
+	final int fullNameIndex = 2;
+	final int birthDateIndex = 8;
+	final int eurWageIndex = 17;
+	final int eurReleaseClauseIndex = 18;
+	final int nationalityIndex = 14;
+	final int clubIndex = 3;
 
 	// Quantas nacionalidades (coluna `nationality`) diferentes existem no arquivo?
 	public int q1() {
-		return lerLista(new ArrayList<String>(), 14).size() - 1;
+		return lerLista(new ArrayList<String>(), nationalityIndex).size() - 1;
 	}
 
 	// Quantos clubes (coluna `club`) diferentes existem no arquivo?
 	// Obs: Existem jogadores sem clube.
 	public int q2() {
-		return lerLista(new ArrayList<>(), 3).size() - 2;
+		return lerLista(new ArrayList<>(), clubIndex).size() - 2;
 	}
 
 	// Liste o primeiro nome (coluna `full_name`) dos 20 primeiros jogadores.
 	public List<String> q3() {
-		return lerLista(new ArrayList<>(), 2).subList(1,21);
+		return lerLista(new ArrayList<>(), fullNameIndex).subList(1,21);
 	}
 
 	// Quem são os top 10 jogadores que possuem as maiores cláusulas de rescisão?
@@ -39,7 +47,46 @@ public class Main {
 	// (utilize as colunas `full_name` e `birth_date`)
 	public List<String> q5() {
 		//TODO: verificar se a data já existe, se já existir, comparar com o campo de desempate. Usar TreeMap<>
+		return pegarJogadoresQ5();
+	}
+
+	private List<String> pegarJogadoresQ5() {
+		String linha;
+		boolean isFirstLine = true;
+		TreeMap<LocalDate, Pair<String, BigDecimal>> jogadores = new TreeMap<>();
+		LocalDate dataAtual;
+		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))){
+			while((linha = bufferedReader.readLine()) != null){
+				if(!isFirstLine){
+					String[] linhaSplit = linha.split(comma);
+					dataAtual = transformaParaLocalDate(linhaSplit[birthDateIndex]);
+					Pair<String, BigDecimal> jogadorAtual = jogadores.get(transformaParaLocalDate(linhaSplit[birthDateIndex]));
+					if(!jogadores.containsKey(dataAtual) ||
+							(jogadorAtual.getValue().compareTo(new BigDecimal(linhaSplit[eurWageIndex])) == -1)){
+						jogadores.put(dataAtual, new Pair<>(linhaSplit[fullNameIndex], new BigDecimal(linhaSplit[eurWageIndex])));
+					}
+
+				}else{
+					isFirstLine = false;
+				}
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+
+		return getNomesJogadores(new ArrayList<>(jogadores.values()));
+
+	}
+
+	private List<String> getNomesJogadores(ArrayList<Pair<String, BigDecimal>> pairs) {
+
 		return null;
+
+	}
+
+	private LocalDate transformaParaLocalDate(String s) {
+		String[] dateSeparated = s.split("-");
+		return LocalDate.of(Integer.parseInt(dateSeparated[0]), Integer.parseInt(dateSeparated[1]), Integer.parseInt(dateSeparated[2]));
 	}
 
 	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves são as idades e os valores a contagem.
@@ -58,15 +105,15 @@ public class Main {
 			while((linha = bufferedReader.readLine()) != null){
 				if(!isFirstLine){
 					String[] linhaSplit = linha.split(comma);
-					if(!linhaSplit[18].equals("")){
-						salarioAtual = new BigDecimal(linhaSplit[18]);
+					if(!linhaSplit[eurReleaseClauseIndex].equals("")){
+						salarioAtual = new BigDecimal(linhaSplit[eurReleaseClauseIndex]);
 						if(!jogadores.containsKey(salarioAtual)){
 							List<String> lista = new ArrayList<>();
-							lista.add(linhaSplit[2]);
+							lista.add(linhaSplit[fullNameIndex]);
 							jogadores.put(salarioAtual, lista);
 						}else{
 							List<String> listaAux = new ArrayList<>(jogadores.get(salarioAtual));
-							listaAux.add(linhaSplit[2]);
+							listaAux.add(linhaSplit[fullNameIndex]);
 							jogadores.put(salarioAtual, listaAux);
 
 						}
