@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.junit.Test;
 
 public class MainTest {
@@ -27,20 +26,20 @@ public class MainTest {
 				"C. Ronaldo dos Santos Aveiro",
 				"Lionel Messi",
 				"Neymar da Silva Santos Jr.",
-				"Luis Suárez",
+				"Luis SuÃ¡rez",
 				"Manuel Neuer",
 				"Robert Lewandowski",
 				"David De Gea Quintana",
 				"Eden Hazard",
 				"Toni Kroos",
-				"Gonzalo Higuaín",
-				"Sergio Ramos García",
+				"Gonzalo HiguaÃ­n",
+				"Sergio Ramos GarcÃ­a",
 				"Kevin De Bruyne",
 				"Thibaut Courtois",
-				"Alexis Sánchez",
-				"Luka Modrić",
+				"Alexis SÃ¡nchez",
+				"Luka ModriÄ‡",
 				"Gareth Bale",
-				"Sergio Agüero",
+				"Sergio AgÃ¼ero",
 				"Giorgio Chiellini",
 				"Gianluigi Buffon",
 				"Paulo Dybala");
@@ -53,7 +52,7 @@ public class MainTest {
 		List<String> expected = Arrays.asList(
 				"Neymar da Silva Santos Jr.",
 				"Lionel Messi",
-				"Luis Suárez",
+				"Luis SuÃ¡rez",
 				"C. Ronaldo dos Santos Aveiro",
 				"Eden Hazard",
 				"Toni Kroos",
@@ -70,12 +69,12 @@ public class MainTest {
 		List<String> expected = Arrays.asList(
 				"Barry Richardson",
 				"Essam El Hadary",
-				"Óscar Pérez",
+				"Ã“scar PÃ©rez",
 				"Jimmy Walker",
 				"Danny Coyne",
 				"Chris Day",
 				"Joaquim Manuel Sampaio Silva",
-				"Kjetil Wæhler",
+				"Kjetil WÃ¦hler",
 				"Timmy Simons",
 				"Benjamin Nivet");
 
@@ -116,6 +115,4 @@ public class MainTest {
 		expected.put(47, 1);
 
 		assertEquals(expected, new Main().q6());
-	}
-
-}
+	}}

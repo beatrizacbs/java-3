@@ -1,26 +1,13 @@
 package challenge;
 
 import bean.Jogador;
-import javafx.util.Pair;
 import parser.CsvParser;
-import sun.reflect.generics.tree.Tree;
-import sun.rmi.server.LoaderHandler;
 
-import java.awt.geom.PathIterator;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.*;
 
 public class Main {
-
-	final String csvFile = "C:\\Users\\Marnie\\codenation\\java-3\\src\\main\\resources\\data.csv";
-	final String comma = ",";
-	final int fullNameIndex = 2;
-	final int birthDateIndex = 8;
-	final int eurWageIndex = 17;
-	final int eurReleaseClauseIndex = 18;
 
 	// Quantas nacionalidades (coluna `nationality`) diferentes existem no arquivo?
 	public int q1() {
@@ -141,7 +128,7 @@ public class Main {
 	}
 
 	private BigDecimal tranformarParaBigDecimal(String eur_release_clause) {
-		if(eur_release_clause != null){
+		if(eur_release_clause != null && !eur_release_clause.equals("")){
 			return new BigDecimal(eur_release_clause);
 		}else {
 			return new BigDecimal("0");
