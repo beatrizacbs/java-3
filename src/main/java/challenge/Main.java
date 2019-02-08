@@ -4,6 +4,7 @@ import bean.Jogador;
 import javafx.util.Pair;
 import parser.CsvParser;
 import sun.reflect.generics.tree.Tree;
+import sun.rmi.server.LoaderHandler;
 
 import java.awt.geom.PathIterator;
 import java.io.BufferedReader;
@@ -87,7 +88,36 @@ public class Main {
 	// Quem são os 10 jogadores mais velhos (use como critério de desempate o campo `eur_wage`)?
 	// (utilize as colunas `full_name` e `birth_date`)
 	public List<String> q5() {
-		return pegarJogadoresQ5();
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Iterator<Jogador> iterator = jogadores.iterator();
+		Jogador jogadorAtual;
+		TreeMap<LocalDate, Jogador> jogadorTreeMap = new TreeMap<>();
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			if(jogadorTreeMap.isEmpty() || !jogadorTreeMap.containsKey(transformaParaLocalDate(jogadorAtual.getBirth_date()))){
+				jogadorTreeMap.put(transformaParaLocalDate(jogadorAtual.getBirth_date()), jogadorAtual);
+			}else{
+				if(tranformarParaBigDecimal(jogadorAtual.getEuro_wage())
+								.compareTo(tranformarParaBigDecimal(jogadorTreeMap.get(transformaParaLocalDate(jogadorAtual.getBirth_date()))
+												.getEuro_wage())) == 1){
+					jogadorTreeMap.put(transformaParaLocalDate(jogadorAtual.getBirth_date()), jogadorAtual);
+				}
+			}
+		}
+
+		return fazerParserParaNomes(jogadorTreeMap).subList(0, 10);
+	}
+
+	private List<String> fazerParserParaNomes(TreeMap<LocalDate, Jogador> jogadorTreeMap) {
+		List<Jogador> jogadores = new ArrayList<>(jogadorTreeMap.values());
+		Iterator<Jogador> iterator = jogadores.iterator();
+		List<String> nomesJogadores = new ArrayList<>();
+		Jogador jogadorAtual;
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			nomesJogadores.add(jogadorAtual.getFull_name());
+		}
+		return  nomesJogadores;
 	}
 
 	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves são as idades e os valores a contagem.
@@ -97,7 +127,7 @@ public class Main {
 	}
 
 	private BigDecimal tranformarParaBigDecimal(String eur_release_clause) {
-		if(!eur_release_clause.equals("")){
+		if(eur_release_clause != null){
 			return new BigDecimal(eur_release_clause);
 		}else {
 			return new BigDecimal("0");

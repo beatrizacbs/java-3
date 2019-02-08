@@ -80,4 +80,12 @@ public class Jogador {
     public void setClub(String club) {
         this.club = club;
     }
+
+    public String getEuro_wage() {
+        return euro_wage;
+    }
+
+    public void setEuro_wage(String euro_wage) {
+        this.euro_wage = euro_wage;
+    }
 }
