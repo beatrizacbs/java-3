@@ -16,13 +16,23 @@ import java.util.List;
 public class CsvParser {
 
     private static final String PATH = "C:\\Users\\Marnie\\codenation\\java-3\\src\\main\\resources\\data.csv";
+    private static List<Jogador> listaJogadores;
 
-    public static List<Jogador> getAllJogadores(){
+    public static List<Jogador> getListaJogadores(){
+        if(listaJogadores == null){
+            listaJogadores = getAllJogadores();
+        }
+        return listaJogadores;
+    }
+
+    private static List<Jogador> getAllJogadores(){
         List<Jogador> retorno =  new ArrayList<>();
         try(Reader reader = Files.newBufferedReader(Paths.get(PATH))){
             ColumnPositionMappingStrategy strategy = new ColumnPositionMappingStrategy();
             strategy.setType(Jogador.class);
-            String[] memberFieldsToBindTo = {"ID", "eur_release_clause", "birth_date", "full_name", "nationality", "club"};
+            String[] memberFieldsToBindTo = {"ID", "", "full_name", "club",
+                    "", "", "", "", "birth_date", "", "", "", "", "", "nationality",
+                    "", "", "eur_wage", "eur_release_clause", ""};
             strategy.setColumnMapping(memberFieldsToBindTo);
 
             CsvToBean<Jogador> jogadores = new CsvToBeanBuilder(reader).withMappingStrategy(strategy)

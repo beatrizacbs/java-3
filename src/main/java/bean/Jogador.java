@@ -1,41 +1,36 @@
 package bean;
 
 import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Jogador {
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 0)
     private int ID;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 18)
     private String eur_release_clause;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 8)
     private String birth_date;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 2)
     private String full_name;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 14)
     private String nationality;
 
-    @CsvBindByName
+    @CsvBindByPosition(position = 3)
     private String club;
+
+    @CsvBindByPosition(position = 17)
+    private String euro_wage;
 
     public Jogador(){
 
-    }
-
-    public Jogador(int ID, String eur_release_clause, String birth_date, String full_name, String nationality, String club) {
-        this.ID = ID;
-        this.eur_release_clause = eur_release_clause;
-        this.birth_date = birth_date;
-        this.full_name = full_name;
-        this.nationality = nationality;
-        this.club = club;
     }
 
     public int getID() {

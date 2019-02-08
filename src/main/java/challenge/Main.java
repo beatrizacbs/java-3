@@ -1,5 +1,6 @@
 package challenge;
 
+import bean.Jogador;
 import javafx.util.Pair;
 import parser.CsvParser;
 import sun.reflect.generics.tree.Tree;
@@ -19,37 +20,106 @@ public class Main {
 	final int birthDateIndex = 8;
 	final int eurWageIndex = 17;
 	final int eurReleaseClauseIndex = 18;
-	final int nationalityIndex = 14;
-	final int clubIndex = 3;
 
 	// Quantas nacionalidades (coluna `nationality`) diferentes existem no arquivo?
 	public int q1() {
-		CsvParser.getAllJogadores();
-		return lerLista(new ArrayList<String>(), nationalityIndex).size() - 1;
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Iterator<Jogador> iterator = jogadores.iterator();
+		List<String> nacionalidades = new ArrayList<>();
+		Jogador jogadorAtual;
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			if(nacionalidades.isEmpty() || !nacionalidades.contains(jogadorAtual.getNationality())){
+				nacionalidades.add(jogadorAtual.getNationality());
+			}
+		}
+
+		return nacionalidades.size();
 	}
 
 	// Quantos clubes (coluna `club`) diferentes existem no arquivo?
 	// Obs: Existem jogadores sem clube.
 	public int q2() {
-		return lerLista(new ArrayList<>(), clubIndex).size() - 2;
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Iterator<Jogador> iterator = jogadores.iterator();
+		List<String> clubes = new ArrayList<>();
+		Jogador jogadorAtual;
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			if((clubes.isEmpty() || !clubes.contains(jogadorAtual.getClub())) && !jogadorAtual.getClub().equals("")){
+				clubes.add(jogadorAtual.getClub());
+			}
+		}
+		return clubes.size();
 	}
 
 	// Liste o primeiro nome (coluna `full_name`) dos 20 primeiros jogadores.
 	public List<String> q3() {
-		return lerLista(new ArrayList<>(), fullNameIndex).subList(1,21);
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Iterator<Jogador> iterator = jogadores.iterator();
+		int index = 0;
+		List<String> nomes = new ArrayList<>();
+		Jogador jogadorAtual;
+		while (iterator.hasNext() && index < 20){
+			jogadorAtual = iterator.next();
+			nomes.add(jogadorAtual.getFull_name());
+			index++;
+		}
+		return nomes;
 	}
 
 	// Quem são os top 10 jogadores que possuem as maiores cláusulas de rescisão?
 	// (utilize as colunas `full_name` e `eur_release_clause`)
 	public List<String> q4() {
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Iterator<Jogador> iterator = jogadores.iterator();
+		Jogador jogadorAtual;
+		BigDecimal eurClauseAtual;
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			eurClauseAtual = tranformarParaBigDecimal(jogadorAtual.getEur_release_clause());
+
+		}
 		return pegarJogadoresQ4().subList(0, 10);
+	}
+
+	private BigDecimal tranformarParaBigDecimal(String eur_release_clause) {
+		if(!eur_release_clause.equals("")){
+			return new BigDecimal(eur_release_clause);
+		}else {
+			return new BigDecimal("0");
+		}
 	}
 
 	// Quem são os 10 jogadores mais velhos (use como critério de desempate o campo `eur_wage`)?
 	// (utilize as colunas `full_name` e `birth_date`)
 	public List<String> q5() {
-		//TODO: verificar se a data já existe, se já existir, comparar com o campo de desempate. Usar TreeMap<>
 		return pegarJogadoresQ5();
+	}
+
+	private LocalDate transformaParaLocalDate(String s) {
+		String[] dateSeparated = s.split("-");
+		return LocalDate.of(Integer.parseInt(dateSeparated[0]), Integer.parseInt(dateSeparated[1]), Integer.parseInt(dateSeparated[2]));
+	}
+
+	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves são as idades e os valores a contagem.
+	// (utilize a coluna `age`)
+	public Map<Integer, Integer> q6() {
+		return separarPorIdade();
+	}
+
+
+	private List<String> getNomesJogadores(List<Pair<String, BigDecimal>> pairs) {
+
+		List<String> retorno = new ArrayList<>();
+		Iterator iterator = pairs.iterator();
+		Pair<String, BigDecimal> pair = pairs.get(0);
+		while (retorno.size() != 10){
+			retorno.add(pair.getKey());
+			pair = (Pair<String, BigDecimal>) iterator.next();
+		}
+		return retorno;
+
 	}
 
 	private List<String> pegarJogadoresQ5() {
@@ -78,30 +148,6 @@ public class Main {
 
 		return getNomesJogadores(new ArrayList<>(jogadores.values()));
 
-	}
-
-	private List<String> getNomesJogadores(List<Pair<String, BigDecimal>> pairs) {
-
-		List<String> retorno = new ArrayList<>();
-		Iterator iterator = pairs.iterator();
-		Pair<String, BigDecimal> pair = pairs.get(0);
-		while (retorno.size() != 10){
-			retorno.add(pair.getKey());
-			pair = (Pair<String, BigDecimal>) iterator.next();
-		}
-		return retorno;
-
-	}
-
-	private LocalDate transformaParaLocalDate(String s) {
-		String[] dateSeparated = s.split("-");
-		return LocalDate.of(Integer.parseInt(dateSeparated[0]), Integer.parseInt(dateSeparated[1]), Integer.parseInt(dateSeparated[2]));
-	}
-
-	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves são as idades e os valores a contagem.
-	// (utilize a coluna `age`)
-	public Map<Integer, Integer> q6() {
-		return separarPorIdade();
 	}
 
 
@@ -149,24 +195,8 @@ public class Main {
 		return retorno;
 	}
 
-	private List<String> lerLista(List<String> lista, int index){
-		String linha;
-		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))){
-			while((linha = bufferedReader.readLine()) != null){
-				String[] informacao = linha.split(comma);
-				if(lista.isEmpty() || !lista.contains(informacao[index])){
-					lista.add(informacao[index]);
-				}
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-
-		return lista;
-	}
-
 	private Map<Integer, Integer> separarPorIdade(){
-		Map<Integer, Integer> retorno = new HashMap<>();
+		Map<Integer, Integer> retorno = new TreeMap<>();
 		String linha = "";
 		boolean isFirstLine = true;
 		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))){
