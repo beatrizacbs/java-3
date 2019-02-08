@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e49cec6e-0978-42bd-89a1-2cae06279d2f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Jogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/challenge/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/challenge/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parser/CsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/CsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+            <state relative-caret-position="269">
+              <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="90">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,7 +81,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="405">
               <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
             </state>
           </provider>
@@ -205,7 +203,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549593803206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549594047583" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -367,17 +365,11 @@
       <workItem from="1549415400384" duration="2786000" />
       <workItem from="1549474847837" duration="1959000" />
       <workItem from="1549494637824" duration="6400000" />
-      <workItem from="1549579350827" duration="12639000" />
+      <workItem from="1549579350827" duration="12949000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_q1 - 2019.02.07 at 22h 22m 06s.xml">
-      <configuration name="MainTest.q1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_q1 - 2019.02.07 at 22h 25m 25s.xml">
-      <configuration name="MainTest.q1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_q1 - 2019.02.07 at 22h 32m 11s.xml">
       <configuration name="MainTest.q1" configurationId="JUnit" />
     </history-entry>
@@ -402,9 +394,15 @@
     <history-entry file="MainTest_q5 - 2019.02.07 at 23h 25m 36s.xml">
       <configuration name="MainTest.q5" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MainTest_q6 - 2019.02.07 at 23h 41m 47s.xml">
+      <configuration name="MainTest.q6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_q3 - 2019.02.07 at 23h 44m 36s.xml">
+      <configuration name="MainTest.q3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40775000" />
+    <option name="totallyTimeSpent" value="41085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -420,12 +418,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32901135" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.6580227" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5024311" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4943274" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.33549434" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.048622366" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.12965964" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -456,10 +454,10 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java</url>
-          <line>49</line>
+          <url>file://$PROJECT_DIR$/src/main/java/challenge/Main.java</url>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -552,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parser/CsvParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="90">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -562,8 +560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/challenge/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="269">
+          <caret line="91" column="49" selection-start-line="91" selection-start-column="49" selection-end-line="91" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -572,7 +570,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/challenge/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="405">
           <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
         </state>
       </provider>

@@ -161,47 +161,6 @@ public class Main {
 		}
 	}
 
-	private List<String> getNomesJogadores(List<Pair<String, BigDecimal>> pairs) {
-
-		List<String> retorno = new ArrayList<>();
-		Iterator iterator = pairs.iterator();
-		Pair<String, BigDecimal> pair = pairs.get(0);
-		while (retorno.size() != 10){
-			retorno.add(pair.getKey());
-			pair = (Pair<String, BigDecimal>) iterator.next();
-		}
-		return retorno;
-
-	}
-
-	private Map<Integer, Integer> separarPorIdade(){
-		Map<Integer, Integer> retorno = new TreeMap<>();
-		String linha = "";
-		boolean isFirstLine = true;
-		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))){
-			while((linha = bufferedReader.readLine()) != null){
-				if(!isFirstLine){
-					String[] informacao = linha.split(comma);
-					Integer valor = Integer.parseInt(informacao[6]);
-					if(retorno.isEmpty() || !retorno.containsKey(valor)){
-						retorno.put(valor, 1);
-					}else if(retorno.containsKey(valor)){
-						Integer quantidade = retorno.get(valor);
-						retorno.put(valor, quantidade + 1);
-					}
-				}else{
-					isFirstLine = false;
-				}
-
-
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-
-		return retorno;
-	}
-
 }
 
 
