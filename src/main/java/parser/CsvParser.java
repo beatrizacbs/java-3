@@ -31,7 +31,7 @@ public class CsvParser {
             ColumnPositionMappingStrategy strategy = new ColumnPositionMappingStrategy();
             strategy.setType(Jogador.class);
             String[] memberFieldsToBindTo = {"ID", "", "full_name", "club",
-                    "", "", "", "", "birth_date", "", "", "", "", "", "nationality",
+                    "", "", "age", "", "birth_date", "", "", "", "", "", "nationality",
                     "", "", "eur_wage", "eur_release_clause", ""};
             strategy.setColumnMapping(memberFieldsToBindTo);
 

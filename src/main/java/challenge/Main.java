@@ -123,7 +123,21 @@ public class Main {
 	// Conte quantos jogadores existem por idade. Para isso, construa um mapa onde as chaves são as idades e os valores a contagem.
 	// (utilize a coluna `age`)
 	public Map<Integer, Integer> q6() {
-		return separarPorIdade();
+		List<Jogador> jogadores = CsvParser.getListaJogadores();
+		Jogador jogadorAtual;
+		Iterator<Jogador> iterator = jogadores.iterator();
+		Integer quantidade = 0;
+		Map<Integer, Integer> contagem = new TreeMap<>();
+		while (iterator.hasNext()){
+			jogadorAtual = iterator.next();
+			if(contagem.isEmpty() || !contagem.containsKey(transformarParaInteger(jogadorAtual.getAge()))){
+				contagem.put(transformarParaInteger(jogadorAtual.getAge()), 1);
+			}else{
+				quantidade = contagem.get(transformarParaInteger(jogadorAtual.getAge())) + 1;
+				contagem.put(transformarParaInteger(jogadorAtual.getAge()), quantidade);
+			}
+		}
+		return contagem;
 	}
 
 	private BigDecimal tranformarParaBigDecimal(String eur_release_clause) {
@@ -139,6 +153,14 @@ public class Main {
 		return LocalDate.of(Integer.parseInt(dateSeparated[0]), Integer.parseInt(dateSeparated[1]), Integer.parseInt(dateSeparated[2]));
 	}
 
+	private Integer transformarParaInteger(String str){
+		if(str != null){
+			return Integer.parseInt(str);
+		}else{
+			return 0;
+		}
+	}
+
 	private List<String> getNomesJogadores(List<Pair<String, BigDecimal>> pairs) {
 
 		List<String> retorno = new ArrayList<>();
@@ -149,34 +171,6 @@ public class Main {
 			pair = (Pair<String, BigDecimal>) iterator.next();
 		}
 		return retorno;
-
-	}
-
-	private List<String> pegarJogadoresQ5() {
-		String linha;
-		boolean isFirstLine = true;
-		TreeMap<LocalDate, Pair<String, BigDecimal>> jogadores = new TreeMap<>();
-		LocalDate dataAtual;
-		try(BufferedReader bufferedReader = new BufferedReader(new FileReader(csvFile))){
-			while((linha = bufferedReader.readLine()) != null){
-				if(!isFirstLine){
-					String[] linhaSplit = linha.split(comma);
-					dataAtual = transformaParaLocalDate(linhaSplit[birthDateIndex]);
-					Pair<String, BigDecimal> jogadorAtual = jogadores.get(transformaParaLocalDate(linhaSplit[birthDateIndex]));
-					if(!jogadores.containsKey(dataAtual) ||
-							(jogadorAtual.getValue().compareTo(new BigDecimal(linhaSplit[eurWageIndex])) == -1)){
-						jogadores.put(dataAtual, new Pair<>(linhaSplit[fullNameIndex], new BigDecimal(linhaSplit[eurWageIndex])));
-					}
-
-				}else{
-					isFirstLine = false;
-				}
-			}
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-
-		return getNomesJogadores(new ArrayList<>(jogadores.values()));
 
 	}
 
